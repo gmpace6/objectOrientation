@@ -154,9 +154,9 @@ const recipe = {
   fat: "cheese",
   protein: "turkey",
 }
+const foodArray = []
 
 function ingredients (obj){
-  const foodArray = []
   let {carbs, fat, protein} = obj
   foodArray.push(carbs)
   foodArray.push(fat)

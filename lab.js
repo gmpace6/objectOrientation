@@ -221,7 +221,9 @@ console.log(user)
   Call the castSpell function on the instance of your wizard.
 */
 
-//Code here
+class Wizard {
+  
+}
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*

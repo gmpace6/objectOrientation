@@ -149,8 +149,19 @@ console.log(totalPopulation(population))
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+const recipe = {
+  carbs: "bread",
+  fat: "cheese",
+  protein: "turkey",
+}
 
+function ingredients (obj){
+  let {carbs, fat, protein} = obj
+  let foodArray = carbs + ", " + fat + ", and " + protein
+
+  return foodArray
+}
+console.log(ingredients(recipe))
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -171,7 +182,10 @@ var user = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user.name = 'Bryan G. Smith'
+user.email = 'bryan.smith@devmounta.in'
+console.log(user)
+
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
@@ -179,7 +193,8 @@ var user = {
   Using the user object above, delete the users age off of the object.
 */
 
-//Code Here
+delete user.age
+console.log(user)
 
 
 //////////////////////////// PROBLEM 12 ////////////////////////////

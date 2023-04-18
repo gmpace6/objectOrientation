@@ -156,11 +156,16 @@ const recipe = {
 }
 
 function ingredients (obj){
+  const foodArray = []
   let {carbs, fat, protein} = obj
-  let foodArray = carbs + ", " + fat + ", and " + protein
+  foodArray.push(carbs)
+  foodArray.push(fat)
+  foodArray.push(protein)
+  // let foodArray = carbs + ", " + fat + ", and " + protein
 
   return foodArray
 }
+
 console.log(ingredients(recipe))
 
 

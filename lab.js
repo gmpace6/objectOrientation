@@ -4,9 +4,12 @@
   Give it a key of name with the value being your name, and another key of age with the value being your age.
 */
 
-//Code here
+const me = {
+  name: `Garrett "The Yellow Dart" Pace`,
+  age: 38,
+}
 
-
+console.log(me)
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
@@ -15,21 +18,26 @@
 //name (a string), color (a string), age (a number),
 //and goodBoy/goodGirl (a boolean).
 
-//Code here
+const dog = {
+  name: "Rex",
+  color: "black",
+  age: 7,
+  goodBoyOrgoodGirl: true
+}
 
-
+console.log(dog)
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
-//Code here
+console.log(dog.name)
 
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
-//Code here
+console.log(dog["color"])
 
 
 
@@ -39,14 +47,23 @@
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
+const favoriteThings = {
+  band: "Beatles",
+  food: "pambazos",
+  person: "Veronica",
+  book: "Words of Radiance",
+  movie: "Princess Bride",
+  holiday: "Easter"
+}
 
+console.log(favoriteThings)
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
-//Code here
+favoriteThings.car = "Lambo"
+favoriteThings['show'] = "The Chosen"
 
 
 /*
@@ -54,8 +71,10 @@
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
 */
 
-//Code here
 
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
+console.log(favoriteThings)
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -72,8 +91,9 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
-
+let {color, make, model, year} = carDetails
+console.log(`My car is a ${color} ${year} ${make} ${model}.`)
+console.log(carDetails)
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -83,15 +103,16 @@ var carDetails = {
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
+let Garrett = {firstName: "Garrett", lastName: "Pace", title: "Mr."}
+function greeting(obj) {
+let {firstName, lastName, title} = obj
 
-function greeting( obj ) {
-  //Code Here
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
+console.log(greeting(Garrett))
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
@@ -102,11 +123,21 @@ function greeting( obj ) {
   The property values will be numbers.
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
-*/
+  */
+  const population = {
+    utah: 100000,
+    california: 500000,
+    texas: 700000,
+    arizona: 200000,
+  }
 
-//Code Here
+function totalPopulation(obj){
+  let {utah, california, texas, arizona} = obj
+  let total = utah+california+texas+arizona
+  return total
+}
 
-
+console.log(totalPopulation(population))
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
